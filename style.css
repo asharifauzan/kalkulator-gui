@@ -19,6 +19,7 @@ div {
   width: auto;
   height: 80px;
   margin: 5px;
+  text-align: right;
   background: lightgoldenrodyellow;
 }
 
@@ -36,36 +37,45 @@ div {
   justify-content: flex-start;
 }
 
-.button .number > * {
+.button .number>* {
   width: 70.3px;
   height: 69px;
-  background: white;
-  border: 1px solid black;
+  background: rgb(216, 216, 216);
+  border: 1px solid rgba(151, 151, 151, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.button .number > .nol {
+.button .number>.nol {
   width: 100%;
 }
 
 .button .operation {
-  width: 23%;
+  width: 25%;
   margin: 5px;
-  background: red;
+  /* background: red; */
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
 }
 
-.button .operation > * {
-  width: 69px;
-  height: 69px;
-  background: blue;
-  border: 1px solid black;
+.button .operation>* {
+  /* width: 69px;
+  height: 69px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  color: blue;
+  font-size: 22px;
+  background: rgb(216, 216, 216);
+  border: 1px solid rgba(151, 151, 151, 0.5);
 }
 
 .result {
-  width: auto;
   height: 30px;
   margin: 5px;
-  background: red;
+  background: rgb(216, 216, 216);
 }
